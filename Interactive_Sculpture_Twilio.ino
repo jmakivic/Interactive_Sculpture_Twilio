@@ -5,8 +5,8 @@
 #include "Adafruit_ILI9341.h"
 #include <WiFiClientSecure.h>
 
-char* ssid = "My WaiFi~ 2.4Ghz";
-char* password = "yourwaifuistrash";
+char* ssid = "****";
+char* password = "****";
 
 #define TFT_DC 15
 #define TFT_CS 0
@@ -77,14 +77,14 @@ void showResponses() {
   if(client.connect(host, 443)){
      Serial.println("connected");
 
-     String URL = "/v0/appOmfamXLJabgtEH/CamParkData";
+     String URL = "****";
 
      Serial.println(URL);
 
      client.println("GET " + URL + " HTTP/1.1");
      client.print("Host: ");
      client.println(host);
-     client.println("Authorization: Bearer keydUirPfIGbgC80E");
+     client.println("Authorization: Bearer ****");
      client.println("User-Agent: arduino/1.0");
      client.println("");
 
